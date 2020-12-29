@@ -1,6 +1,6 @@
 particlesJS("particles-js", {
     "particles":{
-        "number":{"value":250,"density":{"enable":true,"value_area":800}},
+        "number":{"value":500,"density":{"enable":true,"value_area":800}},
         "color":{"value":"#fff"},
         "shape":{"type":"image","stroke":{"width":0,"color":"#000000"},
         "polygon":{"nb_sides":5},
@@ -14,7 +14,7 @@ particlesJS("particles-js", {
 
         "move":{
             "enable":true,
-            "speed":7,
+            "speed":8,
             "direction":"bottom",
             "random":true,
             "straight":false,
