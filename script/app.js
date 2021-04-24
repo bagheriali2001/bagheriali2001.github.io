@@ -1,52 +1,64 @@
-particlesJS("particles-js", {
-    "particles":{
-        "number":{"value":500,"density":{"enable":true,"value_area":800}},
-        "color":{"value":"#fff"},
-        "shape":{"type":"image","stroke":{"width":0,"color":"#000000"},
-        "polygon":{"nb_sides":5},
-        "image":{"src":"../img/snowflake.png","width":100,"height":100}
-    },
-        "opacity":{"value":0.85,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0.3036963036963037,"sync":false}},
+var div = document.getElementById("div-container");
 
-        "size":{"value":7,"random":true,"anim":{"enable":true,"speed":5,"size_min":3,"sync":false}},
+const text = [`<h5>Check my resume</h5>`,
+    `<ul>
+        <li><a href="mailto:alibagheri.1379.1389@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com/in/ali-bagheri-725818198">Linkedin</a></li>
+        <li><a href="https://github.com/bagheriali2001">Github</a></li>
+        <li><a href="https:/twitter.com/bagheriali2001">Twitter</a></li>
+        <li><a href="https://telegram.me/bagheriali2001">Telegram</a></li>
+    </ul>
+    <p>C:\Users\Ali>TYPE resume.txt</p>`,
+    `<h3>Contact information and links</h3>
+    <p>C:\Users\Ali>TYPE links-list.txt</p>`,
+    `<ul>
+        <li><a href="https://github.com/bagheriali2001/Web-midterm-project">Noshirvani institute of technology, information technology center website (as Back-end developer)</a></li>
+        <li><a href="https://github.com/bagheriali2001/Ecommerce-REST-API">Ecommerce-REST-API</a></li>
+    </ul>
+    <p>C:\Users\Ali>ECHO Contact information and links</p>`,
+    `<h3>Projects</h3>
+    <p>C:\Users\Ali>TYPE projects-list.txt</p>`,
+    `<ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>Javascript</li>
+        <li>Mongoose</li>
+        <li>Sequelize.js</li>
+        <li>REST Api</li>
+        <li>Git version control</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>C++</li>
+        <li>Java</li>
+    </ul>
+    <p>C:\Users\Ali>ECHO Projects</p>`,
+    `<h3>Profissional skills</h3>
+    <p>C:\Users\Ali>TYPE skills-list.txt</p>`,
+    `<p>I am a hardworking man, whose challenges could never stop.
+        I am a self-learner who wouldn't take a rest when it is hard to learn.
+        I am a good team player who would help others in the team to reach our goals.
+        When I start a project my only focus is on that and I would finish it way before the deadline.
+        As a former computer olampyad participant, I am known for my different views on problems and the way I solve them.
+        I try to be like a diamond when I am under pressure. I would adapt to hard situations to have my best performance.
+        I am always interested to try new things and gain experience.
+    </p>
+    <p>C:\Users\Ali>ECHO Profissional skills</p>`,
+    `<h3>About me</h3>
+    <p>C:\Users\Ali>TYPE about-me.txt</p>`,
+    `<p>I am a computer engineer student at Babol Noshirvani institute of technology,
+        who is interested in AI and Back-end development. I am currently working as a junior back-end developer.
+        I am living in <a href="https://www.google.com/maps/place/Arak,+Markazi+Province,+Iran">Arak</a> but I am open to relocating for positions in <a href="https://www.google.com/maps/place/Tehran,+Tehran+Province,+Iran">Tehran</a>.</p>
+    <p>C:\Users\Ali>ECHO About me</p>`,
+    `<h3>Who am I?</h3>
+    <p>C:\Users\Ali>TYPE who-am-i.txt</p>`,
+    `<h1>Ali Bagheri</h1>
+    <p>C:\Users\Ali>ECHO Who am I?</p>`,
+    `<p>C:\Users\Ali>TYPE name.txt</p>`
+]
 
-        "line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},
-
-        "move":{
-            "enable":true,
-            "speed":8,
-            "direction":"bottom",
-            "random":true,
-            "straight":false,
-            "out_mode":"out",
-            "bounce":false,
-            "attract":{"enable":false,"rotateX":600,"rotateY":1200}}
-    },
-        "interactivity":{
-            "detect_on":"canvas",
-            "events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"repulse"},"resize":true},
-            "modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},
-            "bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},
-            "repulse":{"distance":200,"duration":0.4},
-            "push":{"particles_nb":4},
-            "remove":{"particles_nb":2}}
-        },
-        
-        "retina_detect":true});
-// var count_particles, stats, update;
-// stats = new Stats;
-// stats.setMode(0);
-// stats.domElement.style.position = 'absolute';
-// stats.domElement.style.left = '0px';
-// stats.domElement.style.top = '0px';
-// document.body.appendChild(stats.domElement);
-// count_particles = document.querySelector('.js-count-particles');
-// update = function() {
-//     stats.begin();
-//     stats.end();
-//     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array){
-//         count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; 
-//     }
-//     requestAnimationFrame(update); 
-// };
-// requestAnimationFrame(update);
+window.addEventListener("keyup",(e)=>{ 
+    document.getElementById('notice-p').style.display='none'
+    if(e.keyCode === 13){
+        div.innerHTML = div.innerHTML + text.pop()
+      }
+})

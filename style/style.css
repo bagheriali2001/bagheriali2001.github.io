@@ -12,3 +12,18 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+
+a{
+    color: white;
+}
+
+.notice{
+    margin: auto;
+    width: 170px;
+    /* color: red; */
+    border-color: blue;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
