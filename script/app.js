@@ -37,7 +37,7 @@ const text = [`<h5>Check my resume</h5>`,
     `<p>I am a hardworking man, whose challenges could never stop.
         I am a self-learner who wouldn't take a rest when it is hard to learn.
         I am a good team player who would help others in the team to reach our goals.
-        When I start a project my only focus is on that and I would finish it way before the deadline.
+        When I start a project my focus is on that and I would finish it way before the deadline.
         As a former computer olampyad participant, I am known for my different views on problems and the way I solve them.
         I try to be like a diamond when I am under pressure. I would adapt to hard situations to have my best performance.
         I am always interested to try new things and gain experience.
@@ -58,7 +58,7 @@ const text = [`<h5>Check my resume</h5>`,
 
 window.addEventListener("keyup",(e)=>{ 
     document.getElementById('notice-p').style.display='none'
-    if(e.keyCode === 13){
+    if(e.keyCode === 13 && text.length > 0){
         div.innerHTML = div.innerHTML + text.pop()
       }
 })
