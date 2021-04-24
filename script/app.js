@@ -1,6 +1,6 @@
 var div = document.getElementById("div-container");
 
-const text = [`<h5>Check my resume</h5>`,
+const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></h5>`,
     `<ul>
         <li><a href="mailto:alibagheri.1379.1389@gmail.com">Email</a></li>
         <li><a href="https://linkedin.com/in/ali-bagheri-725818198">Linkedin</a></li>
@@ -35,12 +35,13 @@ const text = [`<h5>Check my resume</h5>`,
     `<h3>Profissional skills</h3>
     <p>C:\\Users\\Ali>TYPE skills-list.txt</p>`,
     `<p>I am a hardworking man, whose challenges could never stop.
-        I am a self-learner who wouldn't take a rest when it is hard to learn.
-        I am a good team player who would help others in the team to reach our goals.
-        When I start a project my focus is on that and I would finish it way before the deadline.
-        As a former computer olampyad participant, I am known for my different views on problems and the way I solve them.
-        I try to be like a diamond when I am under pressure. I would adapt to hard situations to have my best performance.
-        I am always interested to try new things and gain experience.
+     I am a self-learner who wouldn't take a rest when it is hard to learn.
+      I am a good team player who would help others in the team to reach our goals.
+       When I start a project my focus is on that and I would finish it before the deadline.
+        As a former Computer Olympiad participant, I am known for my different views on problems and the way I solve them.
+         I try to be like a diamond when I am under pressure.
+         I would adapt to hard situations to have my best performance.
+         I am always interested to try new things and gain experience.
     </p>
     <p>C:\\Users\\Ali>ECHO Profissional skills</p>`,
     `<h3>About me</h3>
