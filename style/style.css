@@ -1,71 +1,14 @@
 body{
-    margin:0;
-} 
-canvas{
-    display: block;
-    vertical-align: bottom;
-}
-/* ---- particles.js container ---- */
-#particles-js{ position:absolute; width: 100%;
-    height: 100%; background-color: #2f2c2c;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-
-
-.grid-container{
-    display: grid;
-    position: fixed;
-    grid-template-columns: auto 270px auto;
-    grid-template-rows: auto 20px auto;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.grid-items{
-    width: 100%;
-    height: 100%;
-}
-
-h3{
+    margin:10px;
+    background-color: black;
     color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
-}
-#olaf-div{
-    position: fixed;
-    bottom: 23%;
-    right: 5%;
-    z-index: 9999;
-    height: 10vh;
-}
-#olaf-img{
-    height: 30vh;
-}
-#snow-ground-div{
-    position: fixed;
-    bottom: 10%;
-    z-index: 9998;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-}
-.snow-ground-img{
-    height: 20vh;
-    width: 50%;
-}
-#christmas-tree-div{
-    position: fixed;
-    bottom: 2%;
-    left: 3%;
-    z-index: 9999;
-    display: flex;
-    flex-direction: row;
-}
-.christmas-tree-img{
-    width: 30vh;
+    font-family: lucida_consoleregular;
+} 
+
+@font-face {
+    font-family: 'lucida_consoleregular';
+    src: url('../font/lucida.ttf') format('ttf'),
+         url('../font/lucida-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
