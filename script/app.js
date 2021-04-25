@@ -47,7 +47,7 @@ const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></
     `<h3>About me</h3>
     <p>C:\\Users\\Ali>TYPE about-me.txt</p>`,
     `<p>I am a computer engineer student at Babol Noshirvani institute of technology,
-        who is interested in AI and Back-end development. I am currently working as a junior back-end developer.
+        who is interested in AI and Back-end development. I am currently a junior back-end developer.
         I am living in <a href="https://www.google.com/maps/place/Arak,+Markazi+Province,+Iran">Arak</a> but I am open to relocating for positions in <a href="https://www.google.com/maps/place/Tehran,+Tehran+Province,+Iran">Tehran</a>.</p>
     <p>C:\\Users\\Ali>ECHO About me</p>`,
     `<h3>Who am I?</h3>
