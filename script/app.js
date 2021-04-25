@@ -66,7 +66,7 @@ window.addEventListener("keyup",(e)=>{
       }
 })
 
-window.addEventListener("click",(e)=>{ 
+window.addEventListener("touchstart",(e)=>{ 
     document.getElementById('notice-p').style.display='none'
     if(e.keyCode === 13 && text.length > 0){
         div.innerHTML = div.innerHTML + text.pop()
