@@ -69,7 +69,14 @@ window.addEventListener("keyup",(e)=>{
 
 body.addEventListener("touchstart", (e)=>{ 
     document.getElementById('notice-p').style.display='none'
-    if(e.keyCode === 13 && text.length > 0){
+    if(text.length > 0){
+        div.innerHTML = div.innerHTML + text.pop()
+      }
+}, false)
+
+window.addEventListener("click", (e)=>{ 
+    document.getElementById('notice-p').style.display='none'
+    if( text.length > 0){
         div.innerHTML = div.innerHTML + text.pop()
       }
 }, false)
