@@ -1,4 +1,5 @@
 var div = document.getElementById("div-container");
+var body = document.getElementById("body");
 
 const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></h5>`,
     `<ul>
@@ -66,9 +67,9 @@ window.addEventListener("keyup",(e)=>{
       }
 })
 
-window.addEventListener("touchstart",(e)=>{ 
+body.addEventListener("touchstart", (e)=>{ 
     document.getElementById('notice-p').style.display='none'
     if(e.keyCode === 13 && text.length > 0){
         div.innerHTML = div.innerHTML + text.pop()
       }
-})
+}, false)
