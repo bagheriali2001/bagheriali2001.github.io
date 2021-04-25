@@ -23,8 +23,10 @@ const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></
         <li>Express.js</li>
         <li>Javascript</li>
         <li>Mongoose</li>
+        <li>MongoDB</li>
         <li>Sequelize.js</li>
-        <li>REST Api</li>
+        <li>Sql</li>
+        <li>REST API</li>
         <li>Git version control</li>
         <li>HTML5</li>
         <li>CSS</li>
@@ -32,7 +34,7 @@ const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></
         <li>Java</li>
     </ul>
     <p>C:\\Users\\Ali>ECHO Projects</p>`,
-    `<h3>Profissional skills</h3>
+    `<h3>Professional skills</h3>
     <p>C:\\Users\\Ali>TYPE skills-list.txt</p>`,
     `<p>I am a hardworking man, whose challenges could never stop.
      I am a self-learner who wouldn't take a rest when it is hard to learn.
@@ -43,7 +45,7 @@ const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></
          I would adapt to hard situations to have my best performance.
          I am always interested to try new things and gain experience.
     </p>
-    <p>C:\\Users\\Ali>ECHO Profissional skills</p>`,
+    <p>C:\\Users\\Ali>ECHO Professional skills</p>`,
     `<h3>About me</h3>
     <p>C:\\Users\\Ali>TYPE about-me.txt</p>`,
     `<p>I am a computer engineer student at Babol Noshirvani institute of technology,
@@ -58,6 +60,13 @@ const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></
 ]
 
 window.addEventListener("keyup",(e)=>{ 
+    document.getElementById('notice-p').style.display='none'
+    if(e.keyCode === 13 && text.length > 0){
+        div.innerHTML = div.innerHTML + text.pop()
+      }
+})
+
+window.addEventListener("click",(e)=>{ 
     document.getElementById('notice-p').style.display='none'
     if(e.keyCode === 13 && text.length > 0){
         div.innerHTML = div.innerHTML + text.pop()
