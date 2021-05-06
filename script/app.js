@@ -4,7 +4,7 @@ var body = document.getElementById("body");
 const text = [`<h5>Check my <a href="https://resume.io/r/jKiE7ZKvf">resume</a></h5>`,
     `<ul>
         <li><a href="mailto:alibagheri.1379.1389@gmail.com">Email</a></li>
-        <li><a href="https://linkedin.com/in/ali-bagheri-725818198">Linkedin</a></li>
+        <li><a href="https://www.linkedin.com/in/bagheriali2001/">Linkedin</a></li>
         <li><a href="https://github.com/bagheriali2001">Github</a></li>
         <li><a href="https:/twitter.com/bagheriali2001">Twitter</a></li>
         <li><a href="https://telegram.me/bagheriali2001">Telegram</a></li>
