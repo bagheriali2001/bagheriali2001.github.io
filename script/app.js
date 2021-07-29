@@ -93,13 +93,6 @@ body.addEventListener("touchstart", (e)=>{
     window.scrollTo(0,document.body.scrollHeight);
 }, false)
 window.addEventListener("click", (e)=>{ 
-
-    document.getElementById('notice-p').style.display='none'
-    if( text.length > 0){
-        div.innerHTML = div.innerHTML + text.pop()
-    }
-    window.scrollTo(0,document.body.scrollHeight);
-
     if( e.target.id == "memes"){
         console.log(`Congrats on finding this easter eeg. Enjoy it:
 ${easterEgg[0]}
@@ -110,5 +103,12 @@ ${easterEgg[3]}`)
     else if(e.target.id == "youtube"){
         console.log(`Congrats on finding this easter eeg. Enjoy it:
               *** https://bit.ly/3C22O78 ***`)
+    }
+    else{
+        document.getElementById('notice-p').style.display='none'
+        if( text.length > 0){
+            div.innerHTML = div.innerHTML + text.pop()
+        }
+        window.scrollTo(0,document.body.scrollHeight);
     }
 }, false)
