@@ -10,8 +10,8 @@ services:
     restart: always
     networks:
       - main_network
-    ports:
-      - 127.0.0.1:3001:3001
+    # ports:
+    #   - 127.0.0.1:3001:3001
     env_file:
       - ./.env
 
