@@ -12,7 +12,7 @@ import {
 } from './utils/types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = `Ali Bagheri's Website`;
 
 export const NavBar = {
 	home: 'Home',
