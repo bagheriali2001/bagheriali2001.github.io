@@ -9,7 +9,7 @@ import {
 	type SkillsPageParams,
 	type ResumePageParams,
 	type SearchPageParams
-} from './types';
+} from './utils/types';
 import { Icons } from './utils';
 
 export const TITLE_SUFFIX = 'Slick template with Svelte';
@@ -38,41 +38,30 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 			return Icons.Twitter;
 		case Platform.Youtube:
 			return Icons.Youtube;
+		case Platform.Telegram:
+			return Icons.Telegram;
 	}
 };
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Ali',
+	lastName: 'Bagheri',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		'I am a Software Developer at Landin. I have graduated in Computer Engineering from Babol Noshirvani institute of technology. I am passionate about AI and Back-end development. I am eager to self-host my own services and applications, from a simple blog to a complex decentralized social network, or even game server and analytics solutions. I am also interested in DevOps and CI/CD. I am a big fan of open-source software and I try to contribute to them as much as I can.',
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ 
+			platform: Platform.GitHub,
+			link: 'https://github.com/bagheriali2001'
+		},
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
-		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
+			link: 'https://www.linkedin.com/in/bagheriali2001/'
 		},
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
+			link: 'bagheriali2001@gmail.com'
 		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
-		}
 	]
 };
 
@@ -93,6 +82,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
+	// item: '../files/resume/resume.pdf'
 	item: ''
 };
 

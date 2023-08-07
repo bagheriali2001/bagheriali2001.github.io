@@ -1,8 +1,8 @@
-import type { Asset } from '$lib/types';
+import type { Asset } from '$lib/utils/types';
 import { theme } from '$lib/stores/theme';
 
 const gh = (file: string) =>
-	`https://raw.githubusercontent.com/RiadhAdrani/slick-portfolio-svelte/assets/logos/${file}`;
+	`../logos/${file}`;
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
@@ -67,7 +67,15 @@ const Assets = {
 	Nuxt: a('nuxt.png'),
 	Vite: a('vite.png'),
 	Vitest: a('vitest.png'),
-	Jest: a('jest.png')
+	Jest: a('jest.png'),
+	// self added
+	Mysql: a('mysql.svg'),
+	Git: a('git.svg'),
+	Bash: a('bash.svg'),
+	Linux: a('linux.svg'),
+
+	// Other
+	Landin: a('landin.svg')
 };
 
 export default Assets;

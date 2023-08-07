@@ -28,15 +28,15 @@
 			if (index < items.length - 1) {
 				index = index + 1;
 			} else {
-				index = index - 1;
-				toRight = false;
+				index = 0;
+				// toRight = false;
 			}
 		} else {
 			if (index > 0) {
 				index = index - 1;
 			} else {
-				index = index + 1;
-				toRight = true;
+				index = items.length - 1;
+				// toRight = true;
 			}
 		}
 	};
@@ -53,14 +53,14 @@
 
 	const toggleLeft = () => {
 		clearTimeout(timeout as number);
-		toRight = false;
+		// toRight = false;
 		slide(false);
 		toggle(toRight);
 	};
 
 	const toggleRight = () => {
 		clearTimeout(timeout as number);
-		toRight = true;
+		// toRight = true;
 		slide(true);
 		toggle(toRight);
 	};

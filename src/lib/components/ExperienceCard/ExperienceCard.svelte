@@ -4,6 +4,7 @@
 	import Card from '../Card/Card.svelte';
 	import CardLogo from '../Card/CardLogo.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
+	import CardLink from '../Card/CardLink.svelte';
 	import Chip from '../Chip/Chip.svelte';
 	import ChipIcon from '../Chip/ChipIcon.svelte';
 	import { getAssetURL } from '$lib/data/assets';
@@ -21,16 +22,23 @@
 	const period = `${from} - ${to} · ${months} month${months > 1 ? 's' : ''}`;
 </script>
 
-<Card margin="0px 0px 20px 0px" tiltDegree={2}>
+<Card margin="0px 0px 20px 0px" tiltDegree={2} color={experience.color}>
 	<div class="experience">
-		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={75} />
+		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={75}/>
 		<div class="experience-data">
 			<h3 class="experience-title">
 				<CardTitle title={experience.name} />
 				<div class="experience-title-divider" />
 				<Chip label={experience.contract} size="0.75em" />
+				<div class="experience-title-links">
+					{#each experience.links as link}
+						<CardLink label={link.label ?? ''} to={link.to} />
+					{/each}
+				</div>
 			</h3>
-			<span class="experience-company-name">{experience.company}</span>
+			<span class="experience-company-name">
+					{experience.company}
+			</span>
 			<div class="experience-period">{period}</div>
 			<div class="experience-location">{experience.location}</div>
 			<div class="experience-description">{experience.description}</div>
@@ -76,6 +84,10 @@
 					align-items: center;
 					margin: 5px 0px;
 				}
+			}
+
+			&-links {
+				display: flex;
 			}
 		}
 

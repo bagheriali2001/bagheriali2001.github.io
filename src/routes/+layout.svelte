@@ -1,5 +1,6 @@
 <script lang="ts">
 	import NavMenu from '$lib/components/NavMenu/NavMenu.svelte';
+	import Footer from '$lib/components/Footer/Footer.svelte';
 	import '$lib/index.scss';
 	import { onHydrated, theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
@@ -12,6 +13,7 @@
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
 	<div class="content container"><slot /></div>
+	<Footer />
 </div>
 
 <style lang="scss">

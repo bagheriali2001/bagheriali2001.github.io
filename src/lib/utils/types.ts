@@ -5,7 +5,8 @@ export enum Platform {
 	Linkedin = 'linkedin',
 	Email = 'email',
 	Facebook = 'facebook',
-	Youtube = 'youtube'
+	Youtube = 'youtube',
+	Telegram = 'telegram'
 }
 
 export enum ContractType {
@@ -88,4 +89,10 @@ export type SkillsPageParams = PageWithSearchParams<Skill>;
 
 export interface ResumePageParams extends PageParams {
 	item: string;
+}
+
+export type NavMenuItem = {
+	title: string;
+	to: string;
+	icon: Asset;
 }

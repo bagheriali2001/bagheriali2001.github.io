@@ -1,32 +1,36 @@
 import Assets from './data/assets';
 import { getSkills } from './skills.params';
-import { ContractType, type Experience } from './types';
+import { ContractType, type Experience } from './utils/types';
 
 const MY_EXPERIENCES: Array<Experience> = [
 	{
-		slug: 'software-freelance',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
+		slug: 'software-developer-landin',
+		company: 'Landin',
+		description: `Working on Landing's Landing page builder platform, as Software Developer and DevOps Engineer.`,
+		contract: ContractType.FullTime,
 		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('svelte', 'ts', 'sass', 'css', 'html', 'js'),
-		name: 'Freelancer',
-		color: '#ffffff',
-		links: [],
-		logo: Assets.Unknown
+		location: 'Remote',
+		period: { from: new Date("2022-04") },
+		skills: getSkills('node', 'express', 'js', 'mysql', 'mongodb', 'docker', 'nginx', 'bash', 'linux', 'git'),
+		name: 'Software Developer',
+		color: '#4A09F4',
+		links: [{
+			to: 'https://landin.ir',
+			label: 'Landin',
+			newTab: true
+		}],
+		logo: Assets.Landin
 	},
 	{
-		slug: 'software-freelance-junior',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('css', 'html', 'js'),
-		name: 'Junior Freelancer',
+		slug: 'backend-improver-digital',
+		company: 'Improver Digital',
+		description: 'Wingle Application Backend Developer.',
+		contract: ContractType.FullTime,
+		type: 'Backend Development',
+		location: 'Remote',
+		period: { from: new Date("2021-04"), to: new Date("2021-12") },
+		skills: getSkills('node', 'express', 'js', 'mongodb'),
+		name: 'Backend Developer',
 		color: '#ffffff',
 		links: [],
 		logo: Assets.Unknown

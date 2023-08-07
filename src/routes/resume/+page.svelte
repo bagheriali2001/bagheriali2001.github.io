@@ -9,9 +9,10 @@
 <CommonPage {title}>
 	<div class="resume">
 		{#if item}
-			<a href={item}>
-				<Chip label="Download" size={'1.25em'} />
-			</a>
+			<!-- <a href={item}> -->
+				<!-- <Chip label="Download" size={'1.25em'} /> -->
+				<!-- </a> -->
+			<iframe src={item} style="border:none;" title="Resume" class="w-full h-[42rem]"></iframe>
 		{:else}
 			<Chip label="Ooops! no CV at the moment." />
 		{/if}
@@ -26,6 +27,11 @@
 
 		& > a {
 			color: inherit;
+		}
+
+		&-pdf {
+			width: 100%;
+			height: 100%;
 		}
 	}
 </style>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	// import type { NavMenuItem } from '$lib/utils/types';
 	import type { NavMenuItem } from '$lib/utils/types';
 	import Icon from '../Icon/Icon.svelte';
 	import { Icons } from '$lib/utils';

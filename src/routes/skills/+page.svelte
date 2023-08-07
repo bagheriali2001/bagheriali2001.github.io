@@ -26,6 +26,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 mt-10">
 		{#each result as skill (skill.slug)}
 			<Card
+				color={skill.color}
 				classes={['cursor-pointer']}
 				tiltDegree={1}
 				href={`${base}/skills/${skill.slug}`}
