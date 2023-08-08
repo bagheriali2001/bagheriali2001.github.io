@@ -71,7 +71,7 @@
 </script>
 
 <div class="carrousel">
-	<div class="carrousel-btn" on:click={toggleLeft} on:keyup on:keydown on:keypress>
+	<div class="carrousel-btn" role="button" tabindex="0" on:click={toggleLeft} on:keydown on:keyup on:keypress>
 		<Icon icon={Icons.LeftArrow} size="20px" color={'var(--border-hover)'} />
 	</div>
 
@@ -84,7 +84,7 @@
 		{/each}
 	</div>
 
-	<div class="carrousel-btn" on:click={toggleRight} on:keyup on:keydown on:keypress>
+	<div class="carrousel-btn" role="button" tabindex="0" on:click={toggleRight} on:keydown on:keyup on:keypress>
 		<Icon icon={Icons.RightArrow} color={'var(--border-hover)'} size="20px" />
 	</div>
 </div>

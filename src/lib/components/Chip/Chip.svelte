@@ -19,10 +19,6 @@
 	class:chip-active={active}
 	class:chip-hoverable={hoverable}
 	data-size={size}
-	on:click
-	on:keydown
-	on:keypress
-	on:keyup
 >
 	{label}
 </p>

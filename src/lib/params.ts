@@ -82,7 +82,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: '../files/resume/resume.pdf'
+	item: 'https://bagheriali.dev/files/resume/resume.pdf'
 };
 
 export const SEARCH: SearchPageParams = {

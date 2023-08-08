@@ -24,14 +24,5 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 20px;
-
-		& > a {
-			color: inherit;
-		}
-
-		&-pdf {
-			width: 100%;
-			height: 100%;
-		}
 	}
 </style>

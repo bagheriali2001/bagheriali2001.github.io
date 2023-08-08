@@ -2,7 +2,7 @@ import type { Asset } from '$lib/utils/types';
 import { theme } from '$lib/stores/theme';
 
 const gh = (file: string) =>
-	`../logos/${file}`;
+	`https://bagheriali.dev/logos/${file}`;
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);

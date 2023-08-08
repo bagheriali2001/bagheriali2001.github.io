@@ -58,6 +58,7 @@
 </script>
 
 <svelte:element
+	role="banner"
 	this={href ? 'a' : 'div'}
 	{href}
 	bind:this={el}
