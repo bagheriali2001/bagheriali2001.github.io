@@ -1,0 +1,1 @@
+I started learning Node.js when I was in my second year of college (Fall of 2020). I was influenced by my friends who have had started their education with me, but had jobs already. The friendly syntax of JavaScript was one of the best things about Node.js for me. From that time, all of my work projects and more than 80 percent of projects that I worked on, used Node.js.

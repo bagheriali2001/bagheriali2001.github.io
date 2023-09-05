@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+
+		<meta name="title" content="Ali Bagheri"/>
+		<meta name="type" content="website"/>
+		<meta name="url" content="https://bagheriali.dev"/>
+		<meta name="site_name" content="Ali Bagheri - Software Engineer"/>
+		<meta name="description" content="Ali Bagheri's personal website"/>
+		<meta name="keywords" content="Ali Bagheri, Bagheri, Ali, Bagheri Ali, Bagheriali.net, Bagheriali.dev, Software Engineer, Software, Software Developer, Developer, Web Developer, Web, Full Stack Developer, Full Stack Web Developer, Back End, Back End Developer, Back End Engineer, Back End Software Engineer, Back End Software Developer, Back End Web Developer, Back End Web Engineer, Back End Web Software Engineer"/>
+		<meta name="author" content="Ali Bagheri"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="googlebot" content="index, follow"/>
+		<meta name="google" content="notranslate"/>
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		%sveltekit.head%
+		<script async src="https://umami.bagheriali.net/script.js" data-website-id="877571df-e56a-4019-af7c-7dbf84cd4e63"></script>
+		<script type='text/javascript'>
+			// Some default pre init
+			var Countly = Countly || {};
+			Countly.q = Countly.q || [];
+			
+			// Provide your app key that you retrieved from Countly dashboard
+			Countly.app_key = "%sveltekit.env.PUBLIC_ANALYTICS_APP_KEY%";
+			
+			// Provide your server IP or name.
+			// If you use your own server, make sure you have https enabled if you use
+			// https below.
+			Countly.url = "%sveltekit.env.PUBLIC_ANALYTICS_URL%";
+			
+			// Start pushing function calls to queue
+			// Track sessions automatically (recommended)
+			Countly.q.push(['track_sessions']);
+			
+			//track web page views automatically (recommended)
+			Countly.q.push(['track_pageview']);
+
+			
+			Countly.q.push(['track_errors']);
+			Countly.q.push(['track_clicks']);
+			Countly.q.push(['track_scrolls']);
+
+			Countly.heatmap_whitelist = ["https://bagheriali.dev", "https://bagheriali.net"];
+
+			Countly.q.push([
+				'enableRatingWidgets',
+				{'popups':['64d124bf7f713eadd5cdf5ff']}
+			]);
+
+
+
+			// Uncomment the following line to track web heatmaps (Enterprise Edition)
+			// Countly.q.push(['track_clicks']);
+			
+			// Uncomment the following line to track web scroll maps (Enterprise Edition)
+			// Countly.q.push(['track_scrolls']);
+			
+			// Load Countly script asynchronously
+			(function() {
+			var cly = document.createElement('script'); cly.type = 'text/javascript';
+			cly.async = true;
+			// Enter URL of script here (see below for other option)
+			cly.src = 'https://cdn.jsdelivr.net/npm/countly-sdk-web@latest/lib/countly.min.js';
+			cly.onload = function(){Countly.init()};
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+			})();
+		</script>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
