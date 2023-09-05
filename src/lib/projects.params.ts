@@ -4,6 +4,20 @@ import type { Project } from './utils/types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
+		slug: 'har-insight',
+		color: '#ff3e00',
+		description:
+			'In my time in Landin, sometimes we had to analyze HAR files to find out what is wrong with the website. There was no good tool for this, so I decided to make one. HAR Insight is a simple web app that analyzes HAR files and shows you the results in a nice way. But it will not stay simple for long, I have a lot of plans for it. 😉',
+		links: [{ to: 'https://harinsight.net', label: 'HAR Insight' }, { to: 'https://github.com/bagheriali2001/har-insight', label: 'GitHub' }],
+		logo: Assets.Nuxt,
+		name: 'HAR Insight',
+		period: {
+			from: new Date("2023-08"),
+		},
+		skills: getSkills('nuxt', 'vuejs', 'js', 'nginx', 'docker'),
+		type: 'HAR File Analyzer'
+	},
+	{
 		slug: 'github-webhook-runner',
 		color: '#5e95e3',
 		description:

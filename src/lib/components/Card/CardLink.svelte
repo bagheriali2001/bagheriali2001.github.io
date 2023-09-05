@@ -31,7 +31,7 @@
 				width: max-content;
 				background-color: var(--secondary);
 				padding: 5px 10px;
-				left: 10px;
+				left: -100%;
 				top: calc(100% + 5px);
 				border: 1px solid var(--border);
 				border-radius: 15px;

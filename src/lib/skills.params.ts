@@ -101,6 +101,13 @@ const MY_SKILLS = [
 		name: 'VueJs'
 	}),
 	s({
+		slug: 'nuxt',
+		color: '#00DC82',
+		description: '',
+		logo: Assets.Nuxt,
+		name: 'Nuxt'
+	}),
+	s({
 		slug: 'python',
 		color: '#FFD849',
 		description: '',
