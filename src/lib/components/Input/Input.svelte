@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let value = '';
 	export let placeholder = '';
+	export let custom_class = '';
 </script>
 
-<input bind:value {placeholder} />
+<input bind:value {placeholder} class={custom_class}/>
 
 <style lang="scss">
 	input {
@@ -14,6 +15,7 @@
 		border-radius: 15px;
 		flex: 1;
 		font-size: 1.15em;
+		height: 50px;
 
 		&:focus {
 			outline: 1px solid var(--border-hover);

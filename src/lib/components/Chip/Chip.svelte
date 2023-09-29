@@ -7,6 +7,8 @@
 	export let active = false;
 	export let hoverable = true;
 	export let size = 'auto';
+	export let margin = 'margin: 2.5px;';
+	export let padding = 'padding: 5px 10px;';
 
 	onMount(() => {
 		el.style.setProperty('--size', size);
@@ -19,6 +21,7 @@
 	class:chip-active={active}
 	class:chip-hoverable={hoverable}
 	data-size={size}
+	style={`${margin} ${padding}`}
 >
 	{label}
 </p>
@@ -26,9 +29,6 @@
 <style lang="scss">
 	.chip {
 		--size: auto;
-
-		padding: 5px 15px;
-		margin: 2.5px;
 		display: inline-block;
 		border: 1px solid var(--border);
 		border-radius: 20px;

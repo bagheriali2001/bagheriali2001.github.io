@@ -25,6 +25,18 @@
 	};
 </script>
 
+<svelte:head>
+	<meta name="title" content="Ali Bagheri's Experience"/>
+	<meta name="type" content="website"/>
+	<meta name="url" content="https://bagheriali.dev/experience"/>
+	<meta name="site_name" content="Ali Bagheri - Software Engineer"/>
+	<meta name="description" content="Ali Bagheri's experience"/>
+	<meta name="author" content="Ali Bagheri"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="googlebot" content="index, follow"/>
+	<meta name="google" content="notranslate"/>
+</svelte:head>
+
 <SearchPage {title} on:search={onSearch}>
 	<div class="experiences">
 		{#each result as job (job.slug)}

@@ -18,6 +18,24 @@ export enum ContractType {
 	Internship = 'Internship'
 }
 
+export enum BlogCategory {
+	Dev = 'dev',
+	Film = 'film',
+	Series = 'series',
+	Anime = 'anime',
+	Book = 'book',
+	Other = 'other'
+}
+
+export enum BlogCategoryColor {
+	Dev = '#4C9943',
+	Film = '#F40909',
+	Series = '#F40909',
+	Anime = '#F40909',
+	Book = '#F40909',
+	Other = '#F40909'
+}
+
 export type Asset = string | { light: string; dark: string };
 
 export interface Item {
@@ -87,6 +105,8 @@ export type ExperiencePageParams = PageWithSearchParams<Experience>;
 
 export type SkillsPageParams = PageWithSearchParams<Skill>;
 
+export type BlogPageParams = PageWithSearchParams<Blog>;
+
 export interface ResumePageParams extends PageParams {
 	item: string;
 }
@@ -95,4 +115,18 @@ export type NavMenuItem = {
 	title: string;
 	to: string;
 	icon: Asset;
+}
+
+export type Blog = {
+	slug: string;
+	category: BlogCategory;
+	color: BlogCategoryColor;
+	tags: Array<string>;
+	experiences: Array<string>;
+	projects: Array<string>;
+	description: string;
+	name: string;
+	text: string;
+	time: string;
+	keywords: Array<string>;
 }

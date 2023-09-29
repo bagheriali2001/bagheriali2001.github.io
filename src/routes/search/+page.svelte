@@ -8,6 +8,7 @@
 	import MY_EXPERIENCES from '$lib/experiences.params';
 	import MY_PROJECTS from '$lib/projects.params';
 	import MY_SKILLS from '$lib/skills.params';
+	import MY_BLOGS from '$lib/blog.params';
 
 	const { title } = SEARCH;
 
@@ -67,8 +68,31 @@
 				to: `experience?q=${data.name}`
 			}))
 		);
+
+		result.push(
+			...MY_BLOGS.filter((item) => query && item.name.toLowerCase().includes(query)).map<Item>(
+				(data) => ({
+					data,
+					icon: Icons.Blog,
+					name: data.name,
+					to: `blog/${data.slug}`
+				})
+			)
+		);
 	}
 </script>
+
+<svelte:head>
+	<meta name="title" content="Ali Bagheri's Search"/>
+	<meta name="type" content="website"/>
+	<meta name="url" content="https://bagheriali.dev/search"/>
+	<meta name="site_name" content="Ali Bagheri - Software Engineer"/>
+	<meta name="description" content="Ali Bagheri's search"/>
+	<meta name="author" content="Ali Bagheri"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="googlebot" content="index, follow"/>
+	<meta name="google" content="notranslate"/>
+</svelte:head>
 
 <SearchPage {title} on:search={(e) => (query = e.detail.search)}>
 	<div class="flex flex-col items-stretch gap-10 p-2" />

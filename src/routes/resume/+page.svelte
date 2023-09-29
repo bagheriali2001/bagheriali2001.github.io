@@ -6,6 +6,18 @@
 	const { item, title } = RESUME;
 </script>
 
+<svelte:head>
+	<meta name="title" content="Ali Bagheri's Resume"/>
+	<meta name="type" content="website"/>
+	<meta name="url" content="https://bagheriali.dev/resume"/>
+	<meta name="site_name" content="Ali Bagheri - Software Engineer"/>
+	<meta name="description" content="Ali Bagheri's resume"/>
+	<meta name="author" content="Ali Bagheri"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="googlebot" content="index, follow"/>
+	<meta name="google" content="notranslate"/>
+</svelte:head>
+
 <CommonPage {title}>
 	<div class="resume">
 		{#if item}

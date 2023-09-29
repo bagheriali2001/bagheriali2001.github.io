@@ -43,5 +43,9 @@
 		"unocss": "^0.51.13",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"crypto-js": "^4.1.1",
+		"lokijs": "^1.5.12"
+	}
 }

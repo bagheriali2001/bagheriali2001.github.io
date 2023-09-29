@@ -20,7 +20,19 @@
 
 <svelte:head>
 	<title>{useTitle(title, TITLE_SUFFIX)}</title>
+
+	<meta name="title" content="Ali Bagheri"/>
+	<meta name="type" content="website"/>
+	<meta name="url" content="https://bagheriali.dev"/>
+	<meta name="site_name" content="Ali Bagheri - Software Engineer"/>
+	<meta name="description" content="Ali Bagheri's personal website"/>
+	<meta name="keywords" content="Ali Bagheri, Bagheri, Ali, Bagheri Ali, Bagheriali.net, Bagheriali.dev, Software Engineer, Software, Software Developer, Developer, Web Developer, Web, Full Stack Developer, Full Stack Web Developer, Back End, Back End Developer, Back End Engineer, Back End Software Engineer, Back End Software Developer, Back End Web Developer, Back End Web Engineer, Back End Web Software Engineer"/>
+	<meta name="author" content="Ali Bagheri"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="googlebot" content="index, follow"/>
+	<meta name="google" content="notranslate"/>
 </svelte:head>
+
 <div class="home">
 	<div class="home-section">
 		<MainTitle classes="!text-left">{name} {lastName},</MainTitle>

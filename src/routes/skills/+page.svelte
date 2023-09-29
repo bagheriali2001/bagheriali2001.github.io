@@ -22,6 +22,18 @@
 	};
 </script>
 
+<svelte:head>
+	<meta name="title" content="Ali Bagheri's Skills"/>
+	<meta name="type" content="website"/>
+	<meta name="url" content="https://bagheriali.dev/skills"/>
+	<meta name="site_name" content="Ali Bagheri - Software Engineer"/>
+	<meta name="description" content="Ali Bagheri's skills"/>
+	<meta name="author" content="Ali Bagheri"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="googlebot" content="index, follow"/>
+	<meta name="google" content="notranslate"/>
+</svelte:head>
+
 <SearchPage {title} on:search={onSearch}>
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 mt-10">
 		{#each result as skill (skill.slug)}
