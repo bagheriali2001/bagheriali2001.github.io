@@ -24,6 +24,12 @@
 
 	let result: Array<Blog> = items;
 
+	result = result.sort((a, b) => {
+		const a_date = new Date(a.time);
+		const b_date = new Date(b.time);
+		return b_date.getTime() - a_date.getTime();
+	});
+
 	const onSearch = (e: CustomEvent<{ search: string }>) => {
 		result = items;
 
@@ -44,6 +50,11 @@
 			result = result.filter((it) => it.category === category_value);
 		}
 
+		result = result.sort((a, b) => {
+			const a_date = new Date(a.time);
+			const b_date = new Date(b.time);
+			return b_date.getTime() - a_date.getTime();
+		});
 	};
 </script>
 
