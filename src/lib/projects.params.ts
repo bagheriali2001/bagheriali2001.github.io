@@ -91,6 +91,21 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('svelte', 'ts'),
 		type: 'Personal Website'
+	},
+	{
+		slug: 'idp-crawler',
+		color: '#ff3e00',
+		description:
+			`This is a crawler that checks IDP websites for available test times and notifies you when it finds one.`,
+		links: [{ to: 'https://idpcrawl.bagheriali.dev', label: 'IDP Crawler' }, { to: 'https://github.com/bagheriali2001/idp-crawl', label: 'GitHub' }],
+		logo: Assets.VueJs,
+		name: 'IDP Crawler',
+		period: {
+			from: new Date("2023-09"),
+			to: new Date("2023-10")
+		},
+		skills: getSkills('vuejs', 'node', 'express', 'mongodb', 'docker'),
+		type: 'Utility Web App'
 	}
 ];
 
