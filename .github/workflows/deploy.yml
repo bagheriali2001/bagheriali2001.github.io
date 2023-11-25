@@ -14,5 +14,8 @@ jobs:
       - name: Add Envs 📝
         run: echo "${{ vars.ENV_FILE }}" > .env
 
+      - name: Setting Profiles 📝
+        run: echo "${{ vars.PROFILES_FILE }}" > personal_info.json
+
       - name: Install, Build and Deploy 🔧 🚀
         run: docker compose up -d --build

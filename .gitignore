@@ -11,3 +11,4 @@ vite.config.ts.timestamp-*
 /.vscode
 
 *.db
+personal_info.json

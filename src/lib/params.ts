@@ -10,7 +10,8 @@ import {
 	type SkillsPageParams,
 	type BlogPageParams,
 	type ResumePageParams,
-	type SearchPageParams
+	type SearchPageParams,
+	type ProfilePageParams
 } from './utils/types';
 import { Icons } from './utils';
 
@@ -95,4 +96,8 @@ export const RESUME: ResumePageParams = {
 
 export const SEARCH: SearchPageParams = {
 	title: 'Search'
+};
+
+export const PROFILE: ProfilePageParams = {
+	title: 'Profile',
 };

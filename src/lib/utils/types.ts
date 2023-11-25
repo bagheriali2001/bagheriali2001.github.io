@@ -111,6 +111,8 @@ export interface ResumePageParams extends PageParams {
 	item: string;
 }
 
+export type ProfilePageParams = PageParams;
+
 export type NavMenuItem = {
 	title: string;
 	to: string;
@@ -129,4 +131,25 @@ export type Blog = {
 	text: string;
 	time: string;
 	keywords: Array<string>;
+}
+
+export type ProfileType = {
+	type: string;
+	color: string;
+	icon: string;
+	link_format: string;
+}
+
+export type ContactInformation = {
+	name: string;
+	slug: string;
+	type: string;
+	value: string;
+}
+
+export type Profile = {
+	profile_picture: string;
+	full_name: string;
+	intro_text: string;
+	contact_info: Array<ContactInformation>;
 }
