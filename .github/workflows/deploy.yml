@@ -15,7 +15,7 @@ jobs:
         run: echo "${{ vars.ENV_FILE }}" > .env
 
       - name: Setting Profiles 📝
-        run: echo '${{ vars.ENV_FILE }}' > personal_info.json
+        run: echo '${{ vars.PROFILES_FILE }}' > personal_info.json
 
       - name: Checking Profiles File 📝
         run: cat personal_info.json
