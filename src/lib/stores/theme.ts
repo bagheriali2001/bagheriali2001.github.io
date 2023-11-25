@@ -1,7 +1,7 @@
 import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
-const key = '@riadh-adrani-theme';
+const key = 'is_dark_theme';
 
 const updateLocalStorage = (value: boolean) => {
 	if (browser) {
