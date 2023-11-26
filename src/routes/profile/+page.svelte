@@ -8,7 +8,7 @@
 	let profile_data: Profile = {
 		profile_picture: "",
         "full_name": "Ali Bagheri",
-        "intro_text": "Hi, this is FULL_NAME. If you want to contact me, you can use the contact information below.",
+        "intro_text": "Hi, this is Ali Bagheri. If you want to contact me, you can use the contact information below.",
         "contact_info": [
             {
                 "name": "Email Address",
