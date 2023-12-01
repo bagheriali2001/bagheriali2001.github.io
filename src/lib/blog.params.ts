@@ -1,6 +1,7 @@
 import type { Blog } from './utils/types';
 import first_blog_post from './md/blog-posts/first-blog-post.md?raw';
 import whats_idp_crawler from './md/blog-posts/whats-idp-crawler.md?raw';
+import ssh_key_remote_connect_doesnt_work from './md/blog-posts/ssh-key-remote-connect-doesnt-work.md?raw';
 import { BlogCategory, BlogCategoryColor } from './utils/types';
 
 const s = (blog: Blog) => blog;
@@ -34,6 +35,19 @@ const MY_BLOGS = [
 		text: whats_idp_crawler,
 		time: '2023-10-03',
 		keywords: ['IDP', 'crawl', 'scrape', 'notification email', 'IELTS', 'test time'],
+	}),
+	s({
+		slug: 'ssh-key-remote-connect-doesnt-work',
+		tags: ['need', 'ssh', 'vps', 'debugging'],
+		category: BlogCategory.Dev,
+		color: BlogCategoryColor.Dev,
+		experiences: [],
+		projects: [],
+		description: 'Why connecting to VPS using SSH public key needs a password?',
+		name: "SSH Key Remote Connect doesn't Work",
+		text: ssh_key_remote_connect_doesnt_work,
+		time: '2023-11-30',
+		keywords: ['ssh', 'ssh key based authentication', 'ssh key', 'ssh authentication', 'vps', 'remote connect'],
 	}),
 ];
 
