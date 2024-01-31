@@ -3,6 +3,7 @@ import first_blog_post from './md/blog-posts/first-blog-post.md?raw';
 import whats_idp_crawler from './md/blog-posts/whats-idp-crawler.md?raw';
 import ssh_key_remote_connect_doesnt_work from './md/blog-posts/ssh-key-remote-connect-doesnt-work.md?raw';
 import ssh_alias_config from './md/blog-posts/ssh-alias-config.md?raw';
+import handle_canary_release_with_nginx from './md/blog-posts/handle-canary-release-with-nginx.md?raw';
 import { BlogCategory, BlogCategoryColor } from './utils/types';
 
 const s = (blog: Blog) => blog;
@@ -62,6 +63,19 @@ const MY_BLOGS = [
 		text: ssh_alias_config,
 		time: '2024-01-10',
 		keywords: ['ssh', 'ssh alias', 'ssh config', 'ssh tunneling', 'ssh port forwarding', 'ssh proxy'],
+	}),
+	s({
+		slug: 'handle-canary-release-with-nginx',
+		tags: ['nginx', 'versioning'],
+		category: BlogCategory.Dev,
+		color: BlogCategoryColor.Dev,
+		experiences: ['software-developer-landin'],
+		projects: [],
+		description: "How to handle serving different versions of your application with Nginx",
+		name: "Handle Canary Release with Nginx",
+		text: handle_canary_release_with_nginx,
+		time: '2024-01-31',
+		keywords: ['nginx', 'versioning', 'canary release', 'A/B testing'],
 	}),
 ];
 
