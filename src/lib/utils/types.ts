@@ -145,6 +145,8 @@ export type ContactInformation = {
 	slug: string;
 	type: string;
 	value: string;
+	display_value: string;
+	disabled: boolean;
 }
 
 export type Profile = {

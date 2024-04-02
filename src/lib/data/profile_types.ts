@@ -20,6 +20,7 @@ const profileTypes: ProfileTypes = {
 	X: defineType('X', '#808080', Icons.XTwitter, 'https://x.com/'),
 	Reddit: defineType('Reddit', '#FF4500', Icons.Reddit, 'https://www.reddit.com/user/'),
 	Discord: defineType('Discord', '#5865F2', Icons.Discord, 'https://discordapp.com/users/'),
+	Linkedin: defineType('Linkedin', '#0A66C2', Icons.LinkedIn, 'https://www.linkedin.com/in/'),
 	Generic: defineType('Generic', '#808080', Icons.RightArrow, ''),
 };
 
