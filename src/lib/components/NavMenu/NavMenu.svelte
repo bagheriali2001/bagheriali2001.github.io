@@ -22,7 +22,7 @@
 		{ title: NavBar.personal, to: '/projects', icon: Icons.Projects },
 		{ title: NavBar.career, to: '/experience', icon: Icons.Job },
 		{ title: NavBar.blog, to: '/blog', icon: Icons.Blog },
-		{ title: NavBar.resume, to: '/resume', icon: Icons.Resume }
+		// { title: NavBar.resume, to: '/resume', icon: Icons.Resume }
 	];
 </script>
 
