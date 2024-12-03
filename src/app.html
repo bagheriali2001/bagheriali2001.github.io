@@ -20,57 +20,7 @@
 			rel="stylesheet"
 		/>
 		%sveltekit.head%
-		<script async src="https://umami.bagheriali.net/script.js" data-website-id="f0f88201-0626-4b11-85d8-ecd7302bd7be"></script>
-		<script type='text/javascript'>
-			// Some default pre init
-			var Countly = Countly || {};
-			Countly.q = Countly.q || [];
-			
-			// Provide your app key that you retrieved from Countly dashboard
-			Countly.app_key = "%sveltekit.env.PUBLIC_ANALYTICS_APP_KEY%";
-			
-			// Provide your server IP or name.
-			// If you use your own server, make sure you have https enabled if you use
-			// https below.
-			Countly.url = "%sveltekit.env.PUBLIC_ANALYTICS_URL%";
-			
-			// Start pushing function calls to queue
-			// Track sessions automatically (recommended)
-			Countly.q.push(['track_sessions']);
-			
-			//track web page views automatically (recommended)
-			Countly.q.push(['track_pageview']);
-
-			
-			Countly.q.push(['track_errors']);
-			Countly.q.push(['track_clicks']);
-			Countly.q.push(['track_scrolls']);
-
-			Countly.heatmap_whitelist = ["https://bagheriali.dev", "https://bagheriali.net"];
-
-			Countly.q.push([
-				'enableRatingWidgets',
-				{'popups':['64d124bf7f713eadd5cdf5ff']}
-			]);
-
-
-
-			// Uncomment the following line to track web heatmaps (Enterprise Edition)
-			// Countly.q.push(['track_clicks']);
-			
-			// Uncomment the following line to track web scroll maps (Enterprise Edition)
-			// Countly.q.push(['track_scrolls']);
-			
-			// Load Countly script asynchronously
-			(function() {
-			var cly = document.createElement('script'); cly.type = 'text/javascript';
-			cly.async = true;
-			// Enter URL of script here (see below for other option)
-			cly.src = 'https://cdn.jsdelivr.net/npm/countly-sdk-web@latest/lib/countly.min.js';
-			cly.onload = function(){Countly.init()};
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
-			})();
-		</script>
+		<!-- <script async src="https://umami.bagheriali.net/script.js" data-website-id="f0f88201-0626-4b11-85d8-ecd7302bd7be"></script> -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
