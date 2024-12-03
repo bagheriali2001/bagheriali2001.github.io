@@ -46,7 +46,6 @@
 	"type": "module",
 	"dependencies": {
 		"crypto-js": "^4.1.1",
-		"lokijs": "^1.5.12",
-		"posthog-js": "^1.194.3"
+		"lokijs": "^1.5.12"
 	}
 }
